@@ -3,7 +3,7 @@
 	"version": "1.7.2",
 	"author": "Sitegui <sitegui@sitegui.com.br>",
 	"description": "Basic server&client approach to websocket (text and binary frames)",
-	"main": "./index.js",
+	"main": "./lib",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/sitegui/nodejs-websocket"

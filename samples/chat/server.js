@@ -1,9 +1,10 @@
 var http = require("http")
-var ws = require("../../")
+var path = require("path")
+var ws = require("../../lib")
 var fs = require("fs")
 
 http.createServer(function (req, res) {
-	fs.createReadStream("index.html").pipe(res)
+	fs.createReadStream(path.resolve(__dirname, 'index.html')).pipe(res)
 }).listen(8008)
 console.log(`start server: http://127.0.0.1:8008`);
 
