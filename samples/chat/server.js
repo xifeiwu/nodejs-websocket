@@ -4,7 +4,8 @@ var fs = require("fs")
 
 http.createServer(function (req, res) {
 	fs.createReadStream("index.html").pipe(res)
-}).listen(8080)
+}).listen(8008)
+console.log(`start server: http://127.0.0.1:8008`);
 
 var server = ws.createServer(function (connection) {
 	connection.nickname = null
